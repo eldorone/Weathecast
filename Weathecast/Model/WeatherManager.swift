@@ -39,8 +39,6 @@ struct WeatherManager {
             let temprature = decodedData.main.temp
             let weatherDescription = decodedData.weather[0].description
             
-            print(temprature)
-            
         } catch {
             print(error)
         }
