@@ -40,7 +40,6 @@ struct WeatherManager {
             let weatherDescription = decodedData.weather[0].description
             
             print(temprature)
-            print(weatherDescription)
             
         } catch {
             print(error)
