@@ -1,4 +1,3 @@
-//
 //  WeatherManager.swift
 //  Weathecast
 //
@@ -37,8 +36,12 @@ struct WeatherManager {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
-            print(decodedData.main.temp)
-            print(decodedData.weather[0].description)
+            let temprature = decodedData.main.temp
+            let weatherDescription = decodedData.weather[0].description
+            
+            print(temprature)
+            print(weatherDescription)
+            
         } catch {
             print(error)
         }
