@@ -41,6 +41,7 @@ struct WeatherManager {
             
         } catch {
             print(error)
+            print("Error was found!")
         }
         
     }
