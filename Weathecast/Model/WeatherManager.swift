@@ -7,7 +7,7 @@
 import Foundation
 
 protocol WeatherManagerDelegate {
-    func didUpdateWeather(weather: WeatherModel)
+    func didUpdateWeather(_ weatherManger: WeatherManager, weather: WeatherModel)
 }
 
 struct WeatherManager {
