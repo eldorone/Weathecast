@@ -21,3 +21,8 @@ struct Main: Codable {
 struct Weather: Codable {
     let id: Int
 }
+
+struct Coord: Codable {
+    let lon: Double
+    let lat: Double
+}
