@@ -33,7 +33,7 @@ struct WeatherManager {
                 if let safeData = data {
                     if let weather = self.parseJSON(weatherData: safeData) {
                         let weatherVC = WeatherViewController()
-                        self.delegate?.didUpdateWeather(weather: weather)
+                        self.delegate?.didUpdateWeather(WeatherManager, weather: weather)
                     }
                 }
             }
